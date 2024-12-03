@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Interests</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f4f7fc; /* Soft light blue background */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+    /*suhgkhgkdkvjesbjkdb*/
+
+    #container {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #f0f8ff;
+      border-radius: 12px;
+      background: linear-gradient(to bottom right, #ffffff, #e0f7fa); /* Light gradient */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      max-width: 90%;
+      min-width: 350px;
+    }
+
+    #interest-data {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #80deea; /* Soft teal border */
+      border-radius: 8px;
+      background-color: #ffffff;
+      font-size: 14px;
+      color: #555;
+      text-align: left;
+      overflow-y: auto;
+      max-height: 250px;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    #analyze-button {
+      padding: 14px 22px;
+      font-size: 16px;
+      color: white;
+      background: linear-gradient(to right, #00bcd4, #0097a7); /* Vibrant blue gradient */
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #analyze-button:hover {
+      background: linear-gradient(to right, #0097a7, #007c8b); /* Darker hover effect */
+      transform: scale(1.05);
+    }
+
+    #header {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #00796b; /* Greenish color for title */
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    li span {
+      font-weight: bold;
+      color: #00796b; /* Matching color for the span */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      #container {
+        width: 90%;
+      }
+
+      #interest-data {
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">Analyze User Interests</div>
+    <div id="interest-data">
+      Click "Analyze Interests" to see the analysis...
+    </div>
+    <button id="analyze-button">Analyze Interests</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
